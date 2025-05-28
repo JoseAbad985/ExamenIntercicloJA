@@ -19,7 +19,7 @@ docker-compose up --build
 docker-compose up --build -d
 ```
 
-### 4. Acceder a la aplicación
+### Acceder
 
 - **Frontend**: http://localhost:8080
 - **WebSocket Service**: ws://localhost:3000
