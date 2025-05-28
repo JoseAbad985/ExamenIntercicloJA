@@ -1,0 +1,23 @@
+{
+  "name": "websocket-service",
+  "version": "1.0.0",
+  "description": "Servicio WebSocket independiente para comunicación en tiempo real",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["websocket", "nodejs", "realtime", "docker"],
+  "author": "Tu Nombre",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

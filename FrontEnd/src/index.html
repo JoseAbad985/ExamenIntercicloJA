@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Demo de WebSocket en Tiempo Real</h1>
+
+    <div class="status" id="status">
+        <span class="indicator" id="indicator"></span>
+        <span id="status-text">Desconectado</span>
+    </div>
+
+    <div class="welcome-message" id="welcome-message">
+        <h2>¡Bienvenido!</h2>
+        <p>Conectándose al servidor WebSocket...</p>
+    </div>
+
+    <div class="message-section">
+        <h3>Mensajes en Tiempo Real</h3>
+        <div class="messages" id="messages"></div>
+    </div>
+
+    <div class="controls">
+        <button id="connect-btn" onclick="connectWebSocket()">Conectar</button>
+        <button id="disconnect-btn" onclick="disconnectWebSocket()" disabled>Desconectar</button>
+        <button id="send-test-btn" onclick="sendTestMessage()" disabled>Enviar Mensaje de Prueba</button>
+    </div>
+
+    <div class="info-section">
+        <h4>Información del Sistema</h4>
+        <p><strong>Frontend:</strong> Servido por Apache HTTP Server</p>
+        <p><strong>WebSocket:</strong> Servicio Node.js independiente</p>
+        <p><strong>Orquestación:</strong> Docker Compose</p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
